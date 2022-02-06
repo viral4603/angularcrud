@@ -1,0 +1,17 @@
+<div class="container-fluid">
+    <h1 class="bg-secondary text-white text-center pt-1 pb-1">Customer Details</h1>
+    <div class="container">
+        <div class="d-flex flex-column">
+            <div class="customer w-100 mt-2">
+                <div class="row d-flex flex-row justify-content-between">
+                    <div class="col-lg-6">
+                        <app-customerlist></app-customerlist>
+                    </div>
+                    <div class="col-lg-5">
+                        <app-customerform (listCustomer) ="saveDataToParent($event)"></app-customerform>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
