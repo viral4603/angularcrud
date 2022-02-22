@@ -1,0 +1,20 @@
+.sidebar{
+    flex: 0 0 $sidebar-width;
+    background-color: $bg-color-primary;
+
+    .brand-name{
+        height: $brand-height;
+        color: $font-color-white;
+    }
+    .navbar-items a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.6rem  0;
+        margin-bottom: $navlink-bottom-margin;
+        font-size: $sidebar-font-size;
+        color: $font-color-primary;
+        background-image: linear-gradient(to right, $gradient-start, $gradient-end);
+    }
+
+}

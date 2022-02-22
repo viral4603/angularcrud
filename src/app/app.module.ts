@@ -1,23 +1,22 @@
 import { NgModule } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CustomerModule } from './customer/customer.module';
-import { HttpClientModule } from '@angular/common/http';
+import { CardComponent } from './card/card.component';
+import { CoreModule } from './core/core.module';
+import { ListComponent } from './list/list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    CardComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    ReactiveFormsModule,
-    CustomerModule,
-    HttpClientModule 
+    CoreModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
